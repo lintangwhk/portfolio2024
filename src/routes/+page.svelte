@@ -6,6 +6,6 @@
 
 <div class="w-full h-full bg-black text-white">
 	<Hero />
-	<Projects />
+	<Projects id="projects"/>
     <Contact/>
 </div>
