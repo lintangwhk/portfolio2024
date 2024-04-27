@@ -36,13 +36,13 @@
 			{#each links as link}
 				{#if link.child}
 					<div class="dropdown">
-						<div tabindex="0" role="button" class="btn btn-ghost">
+						<div tabindex="0" role="button" class="btn btn-ghost hover:btn-outline">
 							{link.label}
 						</div>
 						<div class="dropdown-content bg-white text-black shadow rounded-box p-2">
 							{#each link.child as child}
 								<a href={child.route}>
-									<button class="btn btn-ghost">
+									<button class="btn btn-primary hover:btn-outline">
 										{child.label}
 									</button></a
 								>
@@ -51,7 +51,7 @@
 					</div>
 				{:else}
 					<a href={link.route}>
-						<button class="btn btn-ghost">
+						<button class="btn btn-ghost hover:btn-outline">
 							{link.label}
 						</button>
 					</a>
